@@ -1,0 +1,12 @@
+
+mandelbrot:
+  width: 512 # 画像の幅
+  height: 512 # 画像の高さ
+  x_min: -2.0 # x軸の最小値
+  x_max: 1.0 # x軸の最大値
+  y_min: -1.5 # y軸の最小値
+  y_max: 1.5 # y軸の最大値
+  max_iterations: 100 # 最大反復回数
+  background_color: 'black' # `red` or `green` or `blue` or `other`
+  incremental_step: 50 # 背景色の変化のステップの大きさ
+  output: mandelbrot.png # 出力ファイル名
