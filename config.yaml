@@ -9,4 +9,4 @@ mandelbrot:
   max_iterations: 100 # 最大反復回数
   background_color: 'black' # `red` or `green` or `blue` or `other`
   incremental_step: 50 # 背景色の変化のステップの大きさ
-  output: mandelbrot.png
+  output: mandelbrot.png # 出力ファイル名
