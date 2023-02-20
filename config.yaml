@@ -7,4 +7,6 @@ mandelbrot:
   y_min: -1.5
   y_max: 1.5
   max_iterations: 100
+  background_color: 'red' # `red` or `green` or `blue`
+  difference: 30
   output: mandelbrot.png

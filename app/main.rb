@@ -12,6 +12,8 @@ x_max = config['x_max']
 y_min = config['y_min']
 y_max = config['y_max']
 max_iterations = config['max_iterations']
+background_color = config['background_color']
+difference = config['difference']
 output = config['output']
 
 # 画像の初期化
@@ -36,7 +38,17 @@ png = ChunkyPNG::Image.new(width, height, ChunkyPNG::Color::BLACK)
     if iteration == max_iterations
       color = ChunkyPNG::Color::WHITE
     else
-      color = ChunkyPNG::Color.rgb(iteration * 5, iteration * 5, 255 - iteration * 5)
+      # 背景色によって色を変える
+      case background_color
+      when 'red'
+        color = ChunkyPNG::Color.rgb(255 - iteration * difference, iteration * difference, iteration * difference)
+      when 'green'
+        color = ChunkyPNG::Color.rgb(iteration * difference, 255 - iteration * difference, iteration * difference)
+      when 'blue'
+        color = ChunkyPNG::Color.rgb(iteration * difference, iteration * difference, 255 - iteration * difference)
+      else
+        color = ChunkyPNG::Color.rgb(iteration * difference, iteration * difference, iteration * difference)
+      end
     end
 
     # 画像に描画
