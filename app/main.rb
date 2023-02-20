@@ -21,8 +21,8 @@ png = ChunkyPNG::Image.new(width, height, ChunkyPNG::Color::BLACK)
 (0...width).each do |x|
   (0...height).each do |y|
     # 座標の変換
-    zx = x_min + (x_max - x_min) * x / (width - 1.0)
-    zy = y_min + (y_max - y_min) * y / (height - 1.0)
+    zx = x_min + (x_max - x_min) * x / width
+    zy = y_min + (y_max - y_min) * y / height
 
     # マンデルブロ集合の計算
     z = 0.0
