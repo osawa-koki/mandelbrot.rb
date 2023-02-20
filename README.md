@@ -9,3 +9,12 @@
 ```shell
 docker compose up mandelbrot -d [--build]
 ```
+
+---
+
+DevContainer内に入って、開発をすることもできます。  
+その場合は、以下のコマンドを実行してください。  
+
+```shell
+ruby ./app/main.rb
+```
