@@ -1,0 +1,10 @@
+
+mandelbrot:
+  width: 512
+  height: 512
+  x_min: -2.0
+  x_max: 1.0
+  y_min: -1.5
+  y_max: 1.5
+  max_iterations: 100
+  output: mandelbrot.png
