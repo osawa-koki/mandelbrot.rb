@@ -24,7 +24,7 @@ png = ChunkyPNG::Image.new(WIDTH, HEIGHT, ChunkyPNG::Color::BLACK)
     z = 0.0
     iteration = 0
     while z.abs < 2 && iteration < MAX_ITERATIONS
-      z = z * z + complex(zx, zy)
+      z = z * z + Complex(zx, zy)
       iteration += 1
     end
 
