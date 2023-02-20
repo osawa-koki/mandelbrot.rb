@@ -10,6 +10,8 @@
 docker compose up mandelbrot -d [--build]
 ```
 
+設定ファイル(config.yaml)を変更して、マンデルブロ集合の描写を変更することができます。  
+
 ---
 
 DevContainer内に入って、開発をすることもできます。  
