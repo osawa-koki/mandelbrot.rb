@@ -8,5 +8,5 @@ mandelbrot:
   y_max: 1.5
   max_iterations: 100
   background_color: 'black' # `red` or `green` or `blue` or `other`
-  difference: 50
+  incremental_step: 50
   output: mandelbrot.png
